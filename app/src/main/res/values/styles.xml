@@ -6,5 +6,19 @@
         <item name="android:textColor">@color/black</item>
         <item name="textAllCaps">false</item>
         <item name="android:fontFamily">@font/gilroy_bold</item>
+
+
+    </style>
+
+    <style name="BottomNavigationTextApperance">
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="BottomNavigationViewTextStyle">
+        <item name="fontFamily">@font/gilroy_medium</item>
+    </style>
+
+    <style name="BottomNavigationViewInActiveTextStyle">
+        <item name="fontFamily">@font/gilroy_medium</item>
     </style>
 </resources>

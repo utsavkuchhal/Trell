@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Trell">
-        <activity android:name=".Activity.CreateCourseActivity"></activity>
+        <activity android:name=".Activity.HomeActivity"></activity>
+        <activity android:name=".Activity.CreateCourseActivity" />
         <activity android:name=".ActivityCreatorCourses" />
         <activity android:name=".MainActivity">
             <intent-filter>
