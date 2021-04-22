@@ -11,13 +11,14 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.trell.Adapters.CreatorsTabAdapter;
+import com.example.trell.Adapters.ProfileTabAdapter;
 import com.example.trell.R;
 import com.google.android.material.tabs.TabLayout;
 
 
 public class PofilePageFragment extends Fragment {
 
-    CreatorsTabAdapter tabAdapter;
+    ProfileTabAdapter tabAdapter;
     TabLayout myCourseTabs;
     ViewPager2 coursePager;
 
@@ -29,7 +30,7 @@ public class PofilePageFragment extends Fragment {
         coursePager = view.findViewById(R.id.coursePager);
         myCourseTabs = view.findViewById(R.id.myCourseTabs);
         FragmentManager fragmentManager = getFragmentManager();
-        tabAdapter = new CreatorsTabAdapter(fragmentManager, getLifecycle());
+        tabAdapter = new ProfileTabAdapter(fragmentManager, getLifecycle());
         coursePager.setAdapter(tabAdapter);
 
         myCourseTabs.addTab(myCourseTabs.newTab().setText("All Trails"));
