@@ -11,10 +11,10 @@ import com.example.trell.Fragments.CreateContentFragment;
 import com.example.trell.Fragments.LiveFragment;
 import com.example.trell.Fragments.StatsFragment;
 
-public class CreatorsTabAdapter extends FragmentStateAdapter {
+public class ProfileTabAdapter extends FragmentStateAdapter {
 
 
-    public CreatorsTabAdapter(@NonNull FragmentManager fragmentManager, @NonNull Lifecycle lifecycle) {
+    public ProfileTabAdapter(@NonNull FragmentManager fragmentManager, @NonNull Lifecycle lifecycle) {
         super(fragmentManager, lifecycle);
     }
 
