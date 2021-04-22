@@ -5,10 +5,13 @@
     android:layout_height="match_parent"
     tools:context=".Fragments.CurricullumFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvExpendableView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Curriculum fragment" />
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_extra_small"
+        android:overScrollMode="never"
+        android:visibility="visible"
+        tools:listitem="@layout/item_pojo" />
 
 </FrameLayout>
