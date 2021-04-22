@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.trell.Activity.CreateCourseActivity;
+import com.example.trell.Activity.HomeActivity;
 
 import org.w3c.dom.Text;
 
@@ -23,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         text.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, ActivityCreatorCourses.class));
+                startActivity(new Intent(MainActivity.this, HomeActivity.class));
             }
         });
         text1.setOnClickListener(new View.OnClickListener() {
