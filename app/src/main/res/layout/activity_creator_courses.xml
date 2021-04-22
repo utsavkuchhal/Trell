@@ -19,24 +19,6 @@
         app:tabSelectedTextColor="@color/dark"
         app:tabTextAppearance="@style/AppTabTextAppearance">
 
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Dashboard" />
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Curriculum" />
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Library" />
-
-        <!--            <com.google.android.material.tabs.TabItem-->
-        <!--                android:layout_width="wrap_content"-->
-        <!--                android:layout_height="wrap_content" />-->
     </com.google.android.material.tabs.TabLayout>
 
     <View
@@ -50,4 +32,4 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
-</>
+</LinearLayout>
