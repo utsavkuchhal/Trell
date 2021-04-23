@@ -7,6 +7,16 @@
     android:background="@color/grey850"
     tools:context=".Fragments.HomeFragment">
 
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/video"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/iv_profile"
         android:layout_width="55dp"

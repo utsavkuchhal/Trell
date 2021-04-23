@@ -23,9 +23,9 @@ public class StatsFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_stats, container, false);
         PieChart mPieChart = (PieChart) view.findViewById(R.id.piechart);
-        mPieChart.addPieSlice(new PieModel("Subscribed Users", 15, R.color.colorPrimary));
-        mPieChart.addPieSlice(new PieModel("Active Users", 25, R.color.pastel_red));
-        mPieChart.addPieSlice(new PieModel("Users Completed", 35, R.color.algae_green));
+        mPieChart.addPieSlice(new PieModel("Subscribed Users", 15, Color.parseColor("#f2734c")));
+        mPieChart.addPieSlice(new PieModel("Active Users", 25,Color.parseColor("#e74e4b")));
+        mPieChart.addPieSlice(new PieModel("Users Completed", 35, Color.parseColor("#25d366")));
         mPieChart.startAnimation();
         return view;
     }

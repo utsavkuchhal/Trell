@@ -1,5 +1,6 @@
 package com.example.trell.Fragments;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -25,8 +26,8 @@ public class DashBoardFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_dash_board, container, false);
         PieChart mPieChart = (PieChart) view.findViewById(R.id.piechart);
-        mPieChart.addPieSlice(new PieModel("Current Progress", 30, R.color.algae_green));
-        mPieChart.addPieSlice(new PieModel("Course Left", 70, R.color.pastel_red));
+        mPieChart.addPieSlice(new PieModel("Current Progress", 30, Color.parseColor("#f2734c")));
+        mPieChart.addPieSlice(new PieModel("Course Left", 70, Color.parseColor("#25d366")));
         mPieChart.startAnimation();
         return view;
     }
