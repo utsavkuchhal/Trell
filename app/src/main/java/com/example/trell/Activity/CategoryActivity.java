@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import com.example.trell.Adapters.CategoryAdapter;
 import com.example.trell.R;
@@ -16,7 +18,7 @@ public class CategoryActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
     RecyclerView.Adapter myAdapter;
-    RecyclerView.LayoutManager  layoutManager;
+    RecyclerView.LayoutManager layoutManager;
     public static ArrayList<Categories> categories;
 
     @Override
@@ -40,10 +42,17 @@ public class CategoryActivity extends AppCompatActivity {
         categories.add(new Categories("Fun Alley"));
         categories.add(new Categories("Sports Corner"));
         categories.add(new Categories("Art Zone"));
+        categories.add(new Categories("Trell Learning"));
 
         myAdapter = new CategoryAdapter(this, categories);
 
         recyclerView.setAdapter(myAdapter);
 
+        recyclerView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(CategoryActivity.this,HomeActivity.class));
+            }
+        });
     }
 }
