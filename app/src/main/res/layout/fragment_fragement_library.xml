@@ -98,7 +98,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/gilroy_bold"
-                android:text="@string/my_bookmarks"
+                android:text="Live sessions"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
 
@@ -109,7 +109,7 @@
                 android:fontFamily="@font/gilroy_medium"
                 android:textColor="@color/black"
                 android:textSize="14sp"
-                tools:text="24 Items" />
+                tools:text="24 Tutors online " />
 
 
         </LinearLayout>
@@ -224,7 +224,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/gilroy_bold"
-                android:text="@string/course_announcements"
+                android:text="Announcements"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
 
@@ -235,7 +235,7 @@
                 android:fontFamily="@font/gilroy_medium"
                 android:textColor="@color/black"
                 android:textSize="14sp"
-                tools:text="24 Items" />
+                tools:text="Check it out!!" />
 
 
         </LinearLayout>
