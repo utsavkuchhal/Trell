@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.FrameLayout;
 
+import com.example.trell.Fragments.HomeFragment;
 import com.example.trell.Fragments.PofilePageFragment;
 import com.example.trell.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -24,6 +25,7 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         bottomNavigationView = findViewById(R.id.dashboardBottomNav);
         frame_layout = findViewById(R.id.frame_layout);
+        selectorFragment = new HomeFragment();
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
