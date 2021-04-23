@@ -41,16 +41,6 @@
                     android:text="@string/generate_certificate"
                     android:textColor="@color/white"
                     android:textSize="18sp" />
-
-                <!--                <TextView-->
-                <!--                    android:id="@+id/certificate_descTv"-->
-                <!--                    android:layout_width="wrap_content"-->
-                <!--                    android:layout_height="wrap_content"-->
-                <!--                    android:layout_marginTop="@dimen/margin_extra_small"-->
-                <!--                    android:fontFamily="@font/gilroy_medium"-->
-                <!--                    android:text="@string/certificate_desc"-->
-                <!--                    android:textColor="@color/white"-->
-                <!--                    android:textSize="14sp" />-->
             </LinearLayout>
 
 
@@ -61,27 +51,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="@dimen/margin_medium">
-
-            <TextView
-                android:id="@+id/progressTv"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:drawablePadding="10dp"
-                android:fontFamily="@font/gilroy_bold"
-                android:gravity="center"
-                android:text="@string/thresholdcompletion"
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/mentorApprovalTv"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_medium"
-                android:drawablePadding="10dp"
-                android:fontFamily="@font/gilroy_bold"
-                android:gravity="center"
-                android:text="@string/mentorapproval"
-                android:textSize="16sp" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/requestCertificateBtn"
