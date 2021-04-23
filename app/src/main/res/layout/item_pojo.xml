@@ -30,7 +30,7 @@
         android:lines="1"
         android:textColor="@color/black"
         android:textSize="18sp"
-        tools:text="1.Introduction to Android Development"
+        tools:text="1.Introduction to making content"
         android:layout_alignParentLeft="true"
         android:layout_toLeftOf="@id/downloadBtn" />
 
