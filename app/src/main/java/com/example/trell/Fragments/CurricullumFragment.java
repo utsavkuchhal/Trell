@@ -54,7 +54,7 @@ public class CurricullumFragment extends Fragment {
         curricullums.add(new Curricullum("Importance of expressions", "30 mins", "3 lectures"));
         curricullums.add(new Curricullum("Understanding the trend", "1 hr 30 mins", "5 lectures"));
 
-        myAdapter = new CurriculumAdapter(this.getActivity(), curricullums);
+        myAdapter = new CurriculumAdapter(getContext(), curricullums);
         recyclerView.setAdapter(myAdapter);
         return view;
     }

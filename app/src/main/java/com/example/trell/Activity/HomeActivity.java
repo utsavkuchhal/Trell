@@ -44,7 +44,7 @@ public class HomeActivity extends AppCompatActivity {
                         selectorFragment = new PofilePageFragment();
                         break;
                     default:
-                        selectorFragment = new PofilePageFragment();
+                        selectorFragment = new HomeFragment();
                         break;
                 }
 

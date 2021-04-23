@@ -21,17 +21,12 @@ public class CurriculumAdapter extends RecyclerView.Adapter<CurriculumAdapter.Vi
 
     private ArrayList<Curricullum> curricullums;
 
-    ItemClicked activity;
+    Context context;
 
-    public interface ItemClicked{
-
-        void onItemClicked(int index);
-
-    }
 
     public CurriculumAdapter( Context context, ArrayList<Curricullum> curricullums) {
         this.curricullums = curricullums;
-        activity = (ItemClicked) context;
+        this.context =  context;
     }
 
 
