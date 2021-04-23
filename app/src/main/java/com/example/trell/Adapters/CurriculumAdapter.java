@@ -31,6 +31,7 @@ public class CurriculumAdapter extends RecyclerView.Adapter<CurriculumAdapter.Vi
 
     public CurriculumAdapter( Context context, ArrayList<Curricullum> curricullums) {
         this.curricullums = curricullums;
+        
         activity = (ItemClicked) context;
     }
 
