@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.trell.Activity.CategoryActivity;
 import com.example.trell.Activity.CreateCourseActivity;
 import com.example.trell.Activity.HomeActivity;
 
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         TextView text = findViewById(R.id.text);
         TextView text1 = findViewById(R.id.text2);
+        TextView text2 = findViewById(R.id.text3);
 
         text.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,9 +30,18 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         text1.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, CreateCourseActivity.class));
+            }
+        });
+
+        text2.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, CategoryActivity.class));
             }
         });
 
