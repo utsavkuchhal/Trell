@@ -28,9 +28,9 @@ public class ActivityCreatorCourses extends AppCompatActivity {
         tabAdapter = new TabAdapter(fragmentManager, getLifecycle());
         coursePager.setAdapter(tabAdapter);
 
-        myCourseTabs.addTab(myCourseTabs.newTab().setText("First"));
-        myCourseTabs.addTab(myCourseTabs.newTab().setText("Second"));
-        myCourseTabs.addTab(myCourseTabs.newTab().setText("Third"));
+        myCourseTabs.addTab(myCourseTabs.newTab().setText("DashBoard"));
+        myCourseTabs.addTab(myCourseTabs.newTab().setText("Curriculum"));
+        myCourseTabs.addTab(myCourseTabs.newTab().setText("MyLibrary"));
 
         myCourseTabs.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
