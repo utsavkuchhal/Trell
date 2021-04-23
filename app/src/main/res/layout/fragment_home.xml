@@ -18,6 +18,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_background"
+        android:fontFamily="@font/gilroy_bold"
+        android:padding="10dp"
+        android:text="Trell Learning"
+        android:textColor="@color/white"
+        android:textSize="@dimen/heading_text_size"
+        android:id="@+id/btn_category"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/iv_profile"
         android:layout_width="55dp"
