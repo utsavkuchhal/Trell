@@ -72,10 +72,6 @@ public class CurriculumAdapter extends RecyclerView.Adapter<CurriculumAdapter.Vi
            title = itemView.findViewById(R.id.title);
            lectures = itemView.findViewById(R.id.lectures);
            lectureTime = itemView.findViewById(R.id.lectureTime);
-
-
-
-
         }
     }
 }
