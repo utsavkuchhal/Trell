@@ -13,11 +13,12 @@ import android.view.ViewGroup;
 
 import com.example.trell.Activity.CategoryActivity;
 import com.example.trell.Adapters.CommonVideoAdapter;
+import com.example.trell.Adapters.HomeAdapter;
 import com.example.trell.R;
 
 import java.util.ArrayList;
 
-public class MainHomeFragment extends Fragment {
+public class MainHomeFragment extends Fragment implements HomeAdapter.ClickListener {
 
     RecyclerView winningsRv;
 
@@ -26,6 +27,7 @@ public class MainHomeFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
     }
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -38,15 +40,14 @@ public class MainHomeFragment extends Fragment {
         }
         winningsRv.setHasFixedSize(true);
         winningsRv.setLayoutManager(new GridLayoutManager(getContext(), 2));
-        CommonVideoAdapter commonVideoAdapter = new CommonVideoAdapter(getContext(), list, true);
+        HomeAdapter commonVideoAdapter = new HomeAdapter(getContext(), list, MainHomeFragment.this);
         winningsRv.setAdapter(commonVideoAdapter);
 
-        winningsRv.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getContext(), CategoryActivity.class));
-            }
-        });
         return view;
+    }
+
+    @Override
+    public void onItemClick(int position) {
+        startActivity(new Intent(getContext(), CategoryActivity.class));
     }
 }

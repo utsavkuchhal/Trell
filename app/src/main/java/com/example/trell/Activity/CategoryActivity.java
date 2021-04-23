@@ -14,7 +14,7 @@ import com.example.trell.model.Categories;
 
 import java.util.ArrayList;
 
-public class CategoryActivity extends AppCompatActivity {
+public class CategoryActivity extends AppCompatActivity implements CategoryAdapter.ClickListener {
 
     RecyclerView recyclerView;
     RecyclerView.Adapter myAdapter;
@@ -39,20 +39,18 @@ public class CategoryActivity extends AppCompatActivity {
         categories.add(new Categories("Foodilicious"));
         categories.add(new Categories("Cine Masia"));
         categories.add(new Categories("Travel Junkies"));
-        categories.add(new Categories("Fun Alley"));
-        categories.add(new Categories("Sports Corner"));
-        categories.add(new Categories("Art Zone"));
+//        categories.add(new Categories("Fun Alley"));
+//        categories.add(new Categories("Sports Corner"));
+//        categories.add(new Categories("Art Zone"));
         categories.add(new Categories("Trell Learning"));
 
-        myAdapter = new CategoryAdapter(this, categories);
+        myAdapter = new CategoryAdapter(this, categories, CategoryActivity.this);
 
         recyclerView.setAdapter(myAdapter);
+    }
 
-        recyclerView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(CategoryActivity.this,HomeActivity.class));
-            }
-        });
+    @Override
+    public void onItemClick(int position) {
+        startActivity(new Intent(CategoryActivity.this, HomeActivity.class));
     }
 }

@@ -7,6 +7,15 @@
     android:orientation="vertical"
     tools:context=".Activity.CategoryActivity">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gilroy_bold"
+        android:padding="10dp"
+        android:text="Select Category to Watch"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/winningsRv"
         android:layout_width="match_parent"
