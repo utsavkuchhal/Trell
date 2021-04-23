@@ -51,6 +51,6 @@ public class CategoryActivity extends AppCompatActivity implements CategoryAdapt
 
     @Override
     public void onItemClick(int position) {
-        startActivity(new Intent(CategoryActivity.this, HomeActivity.class));
+        startActivity(new Intent(CategoryActivity.this, VideoActivity.class));
     }
 }

@@ -88,7 +88,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/gilroy_bold"
-                        android:text="@string/generate_certificate"
+                        android:text="Download Certificate"
                         android:textColor="@color/white"
                         android:textSize="18sp" />
                 </LinearLayout>
@@ -112,7 +112,7 @@
                     android:drawablePadding="10dp"
                     android:enabled="false"
                     android:padding="10dp"
-                    android:text="@string/download_share"
+                    android:text="Share"
                     android:textAllCaps="false"
                     android:textColor="@color/white" />
 
