@@ -4,11 +4,13 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.example.trell.Activity.Curricullum;
 import com.example.trell.R;
 import com.example.trell.model.Categories;
@@ -40,7 +42,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
     public void onBindViewHolder(@NonNull CategoryAdapter.ViewHolder holder, int i) {
         holder.itemView.setTag(categories.get(i));
         holder.title.setText(categories.get(i).getTitle());
-
+        Glide.with(context).load(categories.get(i).getImage()).into(holder.imgView);
     }
 
     public interface ClickListener {
@@ -55,11 +57,13 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
     public class ViewHolder extends RecyclerView.ViewHolder {
         TextView title;
         MaterialCardView cardView;
+        ImageView imgView;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             title = itemView.findViewById(R.id.subTitleTv);
             cardView = itemView.findViewById(R.id.card_view);
+            imgView = itemView.findViewById(R.id.imgView);
             cardView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

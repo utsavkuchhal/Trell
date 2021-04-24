@@ -25,9 +25,9 @@ public class ProfileTabAdapter extends FragmentStateAdapter {
     @Override
     public Fragment createFragment(int position) {
         switch (position) {
-            case 1:
-                return new BTSFragment();
             case 2:
+                return new BTSFragment();
+            case 1:
                 return new TrellLearningFragment();
             default:
                 return new AllTrailsFragment();

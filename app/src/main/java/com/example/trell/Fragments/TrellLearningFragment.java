@@ -11,26 +11,32 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.trell.Adapters.CommonVideoAdapter;
+import com.example.trell.Adapters.GifAdapter;
 import com.example.trell.R;
 
 import java.util.ArrayList;
 
 public class TrellLearningFragment extends Fragment {
     RecyclerView winningsRv;
+    private static ArrayList<Integer> list;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_trell_learning, container, false);
         winningsRv = view.findViewById(R.id.winningsRv);
-        ArrayList<String> list = new ArrayList<>();
-        for (int i = 0; i < 6; i++) {
-            list.add("");
-        }
+        list = new ArrayList<>();
+        createList();
         winningsRv.setHasFixedSize(true);
         winningsRv.setLayoutManager(new GridLayoutManager(getContext(), 2));
-        CommonVideoAdapter commonVideoAdapter = new CommonVideoAdapter(getContext(), list, true);
+        GifAdapter commonVideoAdapter = new GifAdapter(getContext(), list);
         winningsRv.setAdapter(commonVideoAdapter);
         return view;
+    }
+
+    public static void createList() {
+        list.add(R.drawable.learn);
+        list.add(R.drawable.learn2);
+        list.add(R.drawable.learn3gif);
     }
 }

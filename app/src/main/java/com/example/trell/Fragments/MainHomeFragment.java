@@ -21,29 +21,30 @@ import java.util.ArrayList;
 public class MainHomeFragment extends Fragment implements HomeAdapter.ClickListener {
 
     RecyclerView winningsRv;
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
-    }
-
+    private static ArrayList<Integer> list;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_main_home, container, false);
         winningsRv = view.findViewById(R.id.winningsRv);
-        ArrayList<String> list = new ArrayList<>();
-        for (int i = 0; i < 6; i++) {
-            list.add("");
-        }
+        list = new ArrayList<>();
+        createList();
         winningsRv.setHasFixedSize(true);
         winningsRv.setLayoutManager(new GridLayoutManager(getContext(), 2));
         HomeAdapter commonVideoAdapter = new HomeAdapter(getContext(), list, MainHomeFragment.this);
         winningsRv.setAdapter(commonVideoAdapter);
 
         return view;
+    }
+
+    public static void createList() {
+        list.add(R.drawable.make1);
+        list.add(R.drawable.sports);
+        list.add(R.drawable.fun);
+        list.add(R.drawable.learn3gif);
+        list.add(R.drawable.food);
+        list.add(R.drawable.make2);
     }
 
     @Override

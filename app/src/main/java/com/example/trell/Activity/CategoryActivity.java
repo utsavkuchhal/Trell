@@ -34,15 +34,15 @@ public class CategoryActivity extends AppCompatActivity implements CategoryAdapt
         recyclerView.setLayoutManager(layoutManager);
 
         categories = new ArrayList<Categories>();
-        categories.add(new Categories("Learn To Grow"));
-        categories.add(new Categories("Beautify Me"));
-        categories.add(new Categories("Foodilicious"));
-        categories.add(new Categories("Cine Masia"));
-        categories.add(new Categories("Travel Junkies"));
+        categories.add(new Categories("Learn To Grow", R.drawable.iteach));
+        categories.add(new Categories("Beautify Me", R.drawable.ibeauty));
+        categories.add(new Categories("Foodilicious", R.drawable.ifood));
+        categories.add(new Categories("Cine Masia", R.drawable.icinema));
+        categories.add(new Categories("Travel Junkies", R.drawable.itravel));
 //        categories.add(new Categories("Fun Alley"));
 //        categories.add(new Categories("Sports Corner"));
 //        categories.add(new Categories("Art Zone"));
-        categories.add(new Categories("Trell Learning"));
+        categories.add(new Categories("Trell Learning",R.drawable.ieducate));
 
         myAdapter = new CategoryAdapter(this, categories, CategoryActivity.this);
 
