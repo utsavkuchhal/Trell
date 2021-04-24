@@ -131,6 +131,61 @@
         android:layout_marginEnd="@dimen/margin_large"
         android:background="@color/veryLightPink" />
 
+    <LinearLayout
+        android:id="@+id/announcementsBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:paddingStart="@dimen/margin_large"
+        android:paddingTop="@dimen/margin_large"
+        android:paddingEnd="@dimen/margin_large"
+        android:paddingBottom="@dimen/margin_large">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:src="@drawable/ic_download_circle" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gilroy_bold"
+                android:text="My Downloads"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/gilroy_medium"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:text="Downloaded - 22" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="47dp"
+            android:layout_marginLeft="47dp"
+            android:src="@drawable/ic_dropright_big"
+            android:visibility="visible" />
+    </LinearLayout>
 
     <View
         android:layout_width="match_parent"

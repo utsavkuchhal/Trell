@@ -15,6 +15,7 @@ import android.widget.ImageView;
 import com.example.trell.Activity.Curricullum;
 import com.example.trell.Adapters.CommonVideoAdapter;
 import com.example.trell.Adapters.CurriculumAdapter;
+import com.example.trell.Adapters.TutorialAdapter;
 import com.example.trell.R;
 import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton;
 
@@ -64,7 +65,7 @@ public class CreateContentFragment extends Fragment {
         tutorials.add(new Curricullum("Importance of expressions", "30 mins", "3 lectures"));
         tutorials.add(new Curricullum("Understanding the trend", "1 hr 30 mins", "5 lectures"));
 
-        myAdapter = new CurriculumAdapter(getContext(), tutorials);
+        myAdapter = new TutorialAdapter(getContext(), tutorials);
         recyclerView.setAdapter(myAdapter);
         return view;
     }
